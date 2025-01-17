@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "foo" > file
-
 trace-cmd record \
 	  -o trace_reading_file.dat \
 	  -F \
@@ -9,4 +7,3 @@ trace-cmd record \
 	  -g vfs_read \
 	  cat file
 
-rm file
