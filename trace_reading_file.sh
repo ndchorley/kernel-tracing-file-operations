@@ -5,5 +5,4 @@ trace-cmd record \
 	  -F \
 	  -p function_graph \
 	  -g vfs_read \
-	  cat file
-
+	  cat $1
